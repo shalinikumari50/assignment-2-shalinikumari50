@@ -16,4 +16,20 @@ public class Node<T> {
         this.element = element;
         next = null;
     }
+
+    public Element<T> getElement() {
+        return element;
+    }
+
+    public void setElement(Element<T> element) {
+        this.element = element;
+    }
+
+    public Node<T> getNext() {
+        return next;
+    }
+
+    public void setNext(Node<T> next) {
+        this.next = next;
+    }
 }
