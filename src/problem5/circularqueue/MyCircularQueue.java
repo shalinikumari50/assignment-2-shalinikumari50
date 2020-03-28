@@ -41,4 +41,19 @@ public class MyCircularQueue<T> {
 
     }
 
+    public void displayQueue() {
+        if (start == null) {
+            System.out.println("Queue is empty - underflow");
+            return;
+        }
+        Node temp = start;
+        while (temp != end) {
+            System.out.println(temp.getData().toString());
+            temp = temp.getNext();
+        }
+        System.out.println();
+    }
+
+
+
 }
