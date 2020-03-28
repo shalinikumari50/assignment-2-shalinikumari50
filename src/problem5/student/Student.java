@@ -11,6 +11,30 @@ public class Student {
     private String name;
     private int backLog;
 
+    public int getRollNumber() {
+        return rollNumber;
+    }
+
+    public void setRollNumber(int rollNumber) {
+        this.rollNumber = rollNumber;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getBackLog() {
+        return backLog;
+    }
+
+    public void setBackLog(int backLog) {
+        this.backLog = backLog;
+    }
+
     public Student(int rollNumber, String name, int backLog) {
         this.rollNumber = rollNumber;
         this.name = name;
