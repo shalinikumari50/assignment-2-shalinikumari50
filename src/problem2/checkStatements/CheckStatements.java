@@ -24,4 +24,17 @@ public class CheckStatements {
             return false;
         }
     }
+
+    private boolean checkStatement2(ArrayList<Integer> preOrderTraversal, ArrayList<Integer> postOrderTraversal) {
+        System.out.println("Statement : \"Both the traversal will give same element at the mid position for odd number of nodes.\"");
+        int midIndex = preOrderTraversal.size() / 2;
+        if (preOrderTraversal.get(midIndex).equals(postOrderTraversal.get(midIndex))) {
+            System.out.println("Verified!!");
+            return true;
+        } else {
+            System.out.println("Statement is wrong");
+            return false;
+        }
+    }
+
 }
