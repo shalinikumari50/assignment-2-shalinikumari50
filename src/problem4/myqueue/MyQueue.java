@@ -7,5 +7,11 @@
 package problem4.myqueue;
 // to create queue to store pre - order successor
 
+import problem5.node.Node;
+
 public class MyQueue {
+    private Node start;
+    private Node end;
+    private int size;
+
 }
