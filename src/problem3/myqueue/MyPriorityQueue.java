@@ -14,4 +14,18 @@ public class MyPriorityQueue<T> {
     public MyPriorityQueue() {
         front = null;
     }
+
+    public void enqueue(Node<T> newNode) {
+        if (front == null || newNode.getElement().getPriority() < front.getElement().getPriority()) {
+            newNode.setNext(front);
+            front = newNode;
+            return;
+        }
+        Node<T> temp = front;
+        while (temp.getNext() != null && temp.getNext().getElement().getPriority() <= newNode.getElement().getPriority()) {
+            temp = temp.getNext();
+        }
+        newNode.setNext(temp.getNext());
+        temp.setNext(newNode);
+    }
 }
