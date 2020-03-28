@@ -19,6 +19,13 @@ public class Traversals {
         preOrderTraversal(root.getRight(), result);
     }
 
+    public ArrayList<Integer> postOrderTraversal(TreeNode root) {
+        ArrayList<Integer> result = new ArrayList<>();
+        postOrderTraversal(root, result);
+        return result;
+    }
+
+
     private void postOrderTraversal(TreeNode root, ArrayList<Integer> result) {
         if (root == null) {
             return;
