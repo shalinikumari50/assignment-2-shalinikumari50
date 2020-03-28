@@ -6,5 +6,9 @@
  */
 package problem3.node;
 
-public class Node {
+import problem3.element.Element;
+
+public class Node<T> {
+    private Element<T> element;
+    private Node<T> next;
 }
