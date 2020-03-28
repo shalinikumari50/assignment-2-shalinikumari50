@@ -18,5 +18,16 @@ public class MyCircularQueue<T> {
         end = null;
     }
 
+    public void enqueue(Node<T> newNode) {
+        if (start == null) {
+            start = newNode;
+
+        } else {
+            end.setNext(newNode);
+
+        }
+        newNode.setNext(start);
+        end = newNode;
+    }
 
 }
