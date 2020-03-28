@@ -40,4 +40,12 @@ public class Student {
         this.name = name;
         this.backLog = backLog;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "rollNumber = " + rollNumber +
+                ", name = '" + name + '\'' +
+                '}';
+    }
 }
