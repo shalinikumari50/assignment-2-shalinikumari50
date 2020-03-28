@@ -51,5 +51,15 @@ public class MyPriorityQueue<T> {
         }
     }
 
+    public void printMenu() {
+        System.out.println("press\n" +
+                "0 - to exit\n" +
+                "1 - to insert element\n" +
+                "2 - to delete element\n" +
+                "3 - to display queue\n" +
+                "4 - to print menu");
+    }
+
+
 
 }
