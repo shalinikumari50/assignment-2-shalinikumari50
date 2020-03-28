@@ -6,5 +6,7 @@
  */
 package problem5.node;
 // to define node properties
-public class Node {
+public class Node<T> {
+    private T data;
+    private Node<T> next;
 }
