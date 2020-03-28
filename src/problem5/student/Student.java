@@ -10,4 +10,10 @@ public class Student {
     private int rollNumber;
     private String name;
     private int backLog;
+
+    public Student(int rollNumber, String name, int backLog) {
+        this.rollNumber = rollNumber;
+        this.name = name;
+        this.backLog = backLog;
+    }
 }
