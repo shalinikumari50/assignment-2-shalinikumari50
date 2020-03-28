@@ -36,4 +36,20 @@ public class MyPriorityQueue<T> {
             front = front.getNext();
         }
     }
+
+    public void display() {
+        if (front == null) {
+            System.out.println("Queue is empty - Underflow");
+        } else {
+            Node temp = front;
+            while (temp != null) {
+                System.out.println(temp.getElement().getData().toString());
+                temp = temp.getNext();
+
+            }
+            System.out.println();
+        }
+    }
+
+
 }
