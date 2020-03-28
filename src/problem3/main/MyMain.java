@@ -17,6 +17,7 @@ public class MyMain {
     public static void main(String[] args) {
         MyPriorityQueue<Student> myPriorityQueue = new MyPriorityQueue<>();
         Scanner scanner = new Scanner(System.in);
+        myPriorityQueue.printMenu();
 
     }
 }
