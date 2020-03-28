@@ -23,4 +23,34 @@ public class MyBinarySearchTree {
     public MyBinarySearchTree() {
         this.root = null;
     }
+
+    public void insert(int val) {
+        TreeNode newNode = new TreeNode(val);
+        if (root == null) {
+            root = newNode;
+            return;
+        }
+        TreeNode parent = null;
+        TreeNode current = root;
+        while (true) {
+            parent = current;
+            if (val < current.getData()) {
+                current = current.getLeft();
+                if (current == null) {
+                    parent.setLeft(newNode);
+                    return;
+                }
+            } else if (val > current.getData()) {
+                current = current.getRight();
+                if (current == null) {
+                    parent.setRight(newNode);
+                    return;
+                }
+            } else {
+                System.out.println("Binary search tree can contain only unique elements");
+                return;
+            }
+        }
+
+    }
 }
