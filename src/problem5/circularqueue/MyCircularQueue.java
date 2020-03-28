@@ -30,4 +30,15 @@ public class MyCircularQueue<T> {
         end = newNode;
     }
 
+    public void dequeue() {
+        if (start == null) {
+            System.out.println("Queue is empty - underflow");
+        } else {
+            start = start.getNext();
+            end.setNext(start);
+            System.out.println("First element deleted");
+        }
+
+    }
+
 }
