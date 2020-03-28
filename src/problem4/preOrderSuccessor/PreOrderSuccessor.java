@@ -24,5 +24,18 @@ public class PreOrderSuccessor {
         preOrderTraversal(root.getRight());
     }
 
+    public void preOrderSuccessor(Node node) {
+        Node temp = myQueue.getStart();
+        while (temp.getNext() != null) {
+            if (temp.getData() == node.getData()) {
+                System.out.println("preOrder successor of " + node.getData() + " = " + temp.getNext().getData());
+                return;
+
+            }
+            temp = temp.getNext();
+        }
+        System.out.println("Pre-Order successor of " + node.getData() + " does not exists");
+    }
+
 
 }
