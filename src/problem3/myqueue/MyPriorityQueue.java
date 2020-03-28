@@ -10,4 +10,8 @@ import problem3.node.Node;
 
 public class MyPriorityQueue<T> {
     private Node<T> front;
+
+    public MyPriorityQueue() {
+        front = null;
+    }
 }
