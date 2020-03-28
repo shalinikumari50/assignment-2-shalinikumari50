@@ -76,4 +76,25 @@ public class CheckStatements {
         return statementResult;
     }
 
+    public void results(int[][] testCasesA, int[][] testCasesB) {
+        System.out.println("Statement 1: \"In pre order, root is the first element where as in post order, root is the last element.\"");
+        boolean statement1 = testCases(testCasesA, 1);
+        System.out.println("***************************************************");
+        System.out.println("Statement 2: \"Both the traversal will give same element at the mid position for odd number of nodes.\"");
+        boolean statement2 = testCases(testCasesB, 2);
+        System.out.println("***************************************************");
+
+        System.out.println("RESULTS:");
+        if (statement1) {
+            System.out.println("Statement 1 passed all testCases. Hence it is correct.");
+        } else {
+            System.out.println("Statement 1 could not pass all testCases. Hence it is incorrect.");
+        }
+        if (statement2) {
+            System.out.println("Statement 2 passed all testCases. Hence it is correct.");
+        } else {
+            System.out.println("Statement 2 could not pass all testCases. Hence it is incorrect.");
+        }
+    }
+
 }
