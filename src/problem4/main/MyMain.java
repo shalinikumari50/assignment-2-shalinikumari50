@@ -15,6 +15,7 @@ public class MyMain {
     public static void main(String[] args) {
         MyBinarySearchTree myBinarySearchTree = new MyBinarySearchTree();
         PreOrderSuccessor preOrderSuccessor = new PreOrderSuccessor();
+        int[] nodes = {50, 44, 60, 48, 55, 70, 32, 80, 61, 29, 18, 62, 63, 64, 65, 66};
     }
 
 }
