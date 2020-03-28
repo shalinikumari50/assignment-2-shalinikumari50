@@ -28,4 +28,12 @@ public class MyPriorityQueue<T> {
         newNode.setNext(temp.getNext());
         temp.setNext(newNode);
     }
+
+    public void dequeue() {
+        if (front == null) {
+            System.out.println("Queue is empty - Underflow");
+        } else {
+            front = front.getNext();
+        }
+    }
 }
