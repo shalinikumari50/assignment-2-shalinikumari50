@@ -53,4 +53,16 @@ public class MyBinarySearchTree {
         }
 
     }
+
+    public void createBST(int[] arr) {
+        root = null;
+        for (int value : arr) {
+            insert(value);
+        }
+        if (arr.length != 0) {
+            System.out.println("A Binary Search Tree is created!");
+        } else {
+            System.out.println("No nodes in tree!");
+        }
+    }
 }
