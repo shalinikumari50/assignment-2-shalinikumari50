@@ -54,6 +54,18 @@ public class MyQueue<T> {
         size++;
     }
 
+    public void dequeue() {
+        if (start == null) {
+            System.out.println("Queue is empty - underflow");
+        } else {
+            start = start.getNext();
+            System.out.println("First element deleted");
+            size--;
+        }
+
+    }
+
+
 
 
 }
