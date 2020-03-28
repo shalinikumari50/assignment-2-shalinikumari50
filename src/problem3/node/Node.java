@@ -11,4 +11,9 @@ import problem3.element.Element;
 public class Node<T> {
     private Element<T> element;
     private Node<T> next;
+
+    public Node(Element<T> element) {
+        this.element = element;
+        next = null;
+    }
 }
