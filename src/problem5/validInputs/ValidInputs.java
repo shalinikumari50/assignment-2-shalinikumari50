@@ -40,4 +40,22 @@ public class ValidInputs {
         }
     }
 
+    public String inputValidName() {
+        //a valid name contains only alphabets(a-z or A-Z)
+        int flag = 0;
+        while (true) {
+            String input = inputValidString();
+            if (input.matches(".*[^a-zA-Z].*")) {
+                if (flag == 1 && input.equals("0")) {
+                    return null;
+                }
+                System.out.println("The name should not contain any special characters or digits!");
+                System.out.println("Enter a valid name or '0' to quit");
+                flag = 1;
+                continue;
+            }
+            return input;
+        }
+    }
+
 }
