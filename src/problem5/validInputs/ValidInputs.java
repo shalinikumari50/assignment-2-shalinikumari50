@@ -13,4 +13,16 @@ public class ValidInputs {
         return inputFromUser.equals("");
     }
 
+    private String inputValidString() {
+        String inputFromUser;
+        while (true) {
+            inputFromUser = scanner.nextLine().trim();
+            if (isEmpty(inputFromUser)) {
+                System.out.println("Enter a valid input");
+                continue;
+            }
+            return inputFromUser;
+        }
+    }
+
 }
