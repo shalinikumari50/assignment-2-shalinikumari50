@@ -46,6 +46,7 @@ public class Student {
         return "Student{" +
                 "rollNumber = " + rollNumber +
                 ", name = '" + name + '\'' +
+                ", backLog = " + backLog +
                 '}';
     }
 }
