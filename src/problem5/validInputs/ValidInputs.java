@@ -95,4 +95,22 @@ public class ValidInputs {
         }
     }
 
+    public int inputValidNonNegativeInteger() {
+        int number;
+        int flag = 0;
+        while (true) {
+            number = inputValidInteger(flag);
+            if (number == -1) {
+                return -1;
+            }
+
+            if (number < 0) {
+                System.out.println("Enter non-negative integer or 'q' to quit");
+                flag = 1;
+                continue;
+            }
+            return number;
+        }
+    }
+
 }
