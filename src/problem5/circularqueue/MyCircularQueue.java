@@ -41,6 +41,7 @@ public class MyCircularQueue<T> {
     public MyCircularQueue() {
         start = null;
         end = null;
+        size = 0;
     }
 
     public void enqueue(Node<T> newNode) {
