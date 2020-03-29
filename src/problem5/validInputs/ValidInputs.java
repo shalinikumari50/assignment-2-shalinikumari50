@@ -113,4 +113,15 @@ public class ValidInputs {
         }
     }
 
+    public char inputValidChoice(char char1, char char2) {
+        char choice;
+        choice = inputValidChar();
+        while (choice != char1 && choice != char2) {
+            System.out.println("Enter '" + char1 + "' or '" + char2 + "' to give your response");
+            choice = inputValidChar();
+        }
+        return choice;
+    }
+
+
 }
