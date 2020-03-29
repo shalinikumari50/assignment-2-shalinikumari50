@@ -14,6 +14,30 @@ public class MyCircularQueue<T> {
     private Node<T> end;
     private int size;
 
+    public Node<T> getStart() {
+        return start;
+    }
+
+    public void setStart(Node<T> start) {
+        this.start = start;
+    }
+
+    public Node<T> getEnd() {
+        return end;
+    }
+
+    public void setEnd(Node<T> end) {
+        this.end = end;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
     public MyCircularQueue() {
         start = null;
         end = null;
