@@ -18,6 +18,11 @@ public class MyMain {
         System.out.println("List of students: ");
         myCircularQueue.displayQueue();
 
+        myCircularQueue.processQueue(myCircularQueue);
+
+        System.out.println("After processing the queue: ");
+        myCircularQueue.displayQueue();
+
 
     }
 
