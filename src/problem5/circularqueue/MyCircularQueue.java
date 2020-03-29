@@ -76,11 +76,12 @@ public class MyCircularQueue<T> {
             System.out.println("Queue is empty - underflow");
             return;
         }
-        Node temp = start;
+        Node<T> temp = start;
         while (temp != end) {
             System.out.println(temp.getData().toString());
             temp = temp.getNext();
         }
+        System.out.println(temp.getData().toString());
         System.out.println();
     }
 
