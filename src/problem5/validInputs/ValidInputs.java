@@ -58,4 +58,23 @@ public class ValidInputs {
         }
     }
 
+    private int inputValidInteger(int flag) {
+        int number;
+        while (true) {
+            String numberString = inputValidString();
+            if (numberString.equals("q") && flag == 1) {
+                return -1;
+            }
+            try {
+                number = Integer.parseInt(numberString);
+            } catch (NumberFormatException nfe) {
+                System.out.println("Enter valid integer or 'q' to exit");
+                flag = 1;
+                continue;
+            }
+            return number;
+        }
+    }
+
+
 }
