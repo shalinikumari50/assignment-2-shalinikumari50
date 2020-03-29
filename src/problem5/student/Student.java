@@ -6,6 +6,8 @@
  */
 package problem5.student;
 
+import problem5.circularqueue.MyCircularQueue;
+import problem5.node.Node;
 import problem5.validInputs.ValidInputs;
 
 // to store student information and properties
@@ -41,6 +43,23 @@ public class Student {
 
 
         return new Student(rollNumber, name, backLogs);
+    }
+
+    public static void inputStudentList(MyCircularQueue<Student> myCircularQueue) {
+        ValidInputs validInputs = new ValidInputs();
+        System.out.println("Enter list of students:");
+        char choice = 'y';
+        while (choice != 'n') {
+            Student student = inputStudent();
+
+
+            System.out.println("Do you want to enter one more student (y/n)?");
+            choice = validInputs.inputValidChoice('y', 'n');
+            if (student == null) {
+                continue;
+            }
+            myCircularQueue.enqueue(new Node<>(student));
+        }
     }
 
     public int getRollNumber() {
