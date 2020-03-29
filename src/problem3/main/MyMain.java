@@ -33,15 +33,13 @@ public class MyMain {
                 case 0:
                     break;
                 case 1:
-                    System.out.println("Enter student roll number: ");
-                    int rollNumber = Integer.parseInt(scanner.nextLine().trim());
-                    System.out.println("Enter student name: ");
-                    String name = scanner.nextLine().trim();
-                    System.out.println("Enter number of back logs: ");
-                    int backLogs = Integer.parseInt(scanner.nextLine().trim());
-                    Student student = new Student(rollNumber, name, backLogs);
 
-                    myPriorityQueue.enqueue(new Node<>(new Element<>(student, rollNumber)));
+                    Student student = Student.inputStudent();
+                    if (student == null) {
+                        break;
+                    }
+
+                    myPriorityQueue.enqueue(new Node<>(new Element<>(student, student.getRollNumber())));
                     break;
                 case 2:
                     myPriorityQueue.dequeue();
