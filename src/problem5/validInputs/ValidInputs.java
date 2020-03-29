@@ -9,4 +9,8 @@ public class ValidInputs {
         scanner = new Scanner(System.in);
     }
 
+    private boolean isEmpty(String inputFromUser) {
+        return inputFromUser.equals("");
+    }
+
 }
