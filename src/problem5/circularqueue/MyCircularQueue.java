@@ -63,7 +63,10 @@ public class MyCircularQueue<T> {
         } else {
             start = start.getNext();
             end.setNext(start);
-            System.out.println("First element deleted");
+            size--;
+            if (size == 0) {
+                start = end = null;
+            }
         }
 
     }
