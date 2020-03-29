@@ -25,4 +25,19 @@ public class ValidInputs {
         }
     }
 
+    private char inputValidChar() {
+        char input;
+        while (true) {
+            String inputFromUser = inputValidString();
+
+            //check if user entered more than one character i.e. a string instead of a character
+            if (inputFromUser.length() > 1) {
+                System.out.println("Enter a single character");
+                continue;
+            }
+            input = inputFromUser.charAt(0);
+            return input;
+        }
+    }
+
 }
