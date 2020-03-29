@@ -15,6 +15,9 @@ public class MyMain {
         MyCircularQueue<Student> myCircularQueue = new MyCircularQueue<>();
         Student.inputStudentList(myCircularQueue);
 
+        System.out.println("List of students: ");
+        myCircularQueue.displayQueue();
+
 
     }
 
