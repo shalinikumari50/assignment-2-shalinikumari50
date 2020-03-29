@@ -54,6 +54,7 @@ public class MyCircularQueue<T> {
         }
         newNode.setNext(start);
         end = newNode;
+        size++;
     }
 
     public void dequeue() {
