@@ -13,6 +13,7 @@ import problem5.student.Student;
 public class MyMain {
     public static void main(String[] args) {
         MyCircularQueue<Student> myCircularQueue = new MyCircularQueue<>();
+        Student.inputStudentList(myCircularQueue);
 
 
     }
