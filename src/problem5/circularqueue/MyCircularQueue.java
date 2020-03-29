@@ -12,6 +12,7 @@ import problem5.node.Node;
 public class MyCircularQueue<T> {
     private Node<T> start;
     private Node<T> end;
+    private int size;
 
     public MyCircularQueue() {
         start = null;
